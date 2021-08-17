@@ -1,0 +1,126 @@
+1. [DONE] Fibonacci with recursion and without recursion
+2. [DONE] Find angle between clock hands
+3. [DONE] Itenary problem.(refer problem number:7)
+4. [DONE] Implement function that examines if all the brackets are matched in the given string.
+
+5. [  ] Given two integer arrays, find a pair whose sum will be equal or closed to the target.
+Array 1 [-1, 3, 8, 2, 9, 5]
+Array 2 [4, 1, 2, 10, 5, 20]
+
+6. [DONE] Given an unordered list of flights taken by someone, each represented as (origin,
+destination) pairs, and a starting airport, compute the person's itinerary. If no such itinerary
+exists, return null. If there are multiple possible itineraries, return the lexicographically
+smallest one. All flights must be used in the itinerary.
+For example, given the list of flights [('SFO', 'HKO'), ('YYZ', 'SFO'), ('YUL', 'YYZ'), ('HKO', 'ORD')]
+and starting airport 'YUL', you should return the list ['YUL', 'YYZ', 'SFO', 'HKO', 'ORD'].
+Given the list of flights [('SFO', 'COM'), ('COM', 'YYZ')] and starting airport 'COM', you should
+return null.
+https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/
+
+7. [DONE same as 19]  https://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-
+station-set-2-map-based-approach/
+
+8. [DONE same as 19] The above problem(prob no:7) can have multiple variation like instead of platform it can be
+number of class room or number of floor etc.
+
+9. [DONE] Given a string "aaacbbea". Write a program to output "a3c1b2e1a1"
+
+10. [DONE] Add two numbers given in linklist like num1 = 123 in 3->2->1 and num2 = 456 in 6->5->4
+
+11. [DONE] Write the code inorder to get the desired output as mentioned in the below image.
+#define getLastN(num)
+
+#include <stdio.h>
+int main(){
+    int y =0xABCD; 
+
+    int x = getLastN(y,4);  // n=4, expected o/p is 0xD
+                            // n=8, expected o/p is 0xCD
+                            // n=8, expected o/p is 0xBCD
+}
+
+
+12. [] Write a function that
+    1. Add two int
+    2. Multiple two int
+    3. Accepts two int and one function pointer
+Note: You can pass 1 and 2 as an argument in 3.
+
+13. [DONE] Synchronize threads so print out is A1B2C3D4 using semaphores
+
+14. [DONE] Program to find the length of longest substring with and without repeating characters.
+
+15. [DONE] Program regarding Semaphores and mutex
+
+16. [DONE] Write the program to allocate space on heap for 1000 pointers.
+
+17. [ ] Function pointer example;
+
+18. [DONE] three integer that multiply to 20 in c
+2,4,1,6,5,40,-1
+
+19. [DONE] Array intervals (start, end).
+Given array of time interval (start, end) for classroom lectures (possibly overlapping).
+Find the min number of rooms required.
+For ex: given [(30,73),(0,30),(60,130)]  answer:2
+
+Theory Questions.
+use of static keyword, static variable and static function
+virtual function
+Runtime polymorphism
+Virtual destructor
+storage classes / access specifiers
+scope rules
+memory management / Memory layout.
+OOPs concept
+Difference between Struct and union
+Semaphone and Mutex
+Difference ++ptr , ++*ptr , ptr++
+How to communicate between threads
+
+multi threading
+Link list
+Deadlock
+Interrupt service routine
+Internal working of Calloc, Malloc, Realloc, free and delete
+Difference between process and thread
+Intent in android
+
+Structure Padding
+Function Pointer and Callback in C
+Method overloading
+Bitfields
+some C++ related questions like what Static do in C++
+What will happen if we try to access already freed memory
+Pointer related question
+
+like pointers
+> https://tekslate.com/explain-different-types-pointers-c-language
+
+///
+It allows storing different data types in the same memory location. You can define a union with many members, but only one member can contain a value at any given time. Unions provide an efficient way of using the same memory location for multiple purposes. 
+
+// UNION best example:
+struct _mydata {
+    int which_one;
+    union _data {
+            int a;
+            float b;
+            char c;
+    } foo;
+} bar;
+
+switch (bar.which_one)
+{
+   case INTEGER  :  /* access bar.foo.a;*/ break;
+   case FLOATING :  /* access bar.foo.b;*/ break;
+   case CHARACTER:  /* access bar.foo.c;*/ break;
+}
+
+Q. Can static function be virtual ?
+>>>> No, because it doesn't make any sense in C++.
+
+Virtual functions are invoked when you have a pointer/reference to an instance of a class. Static functions aren't tied to a particular instance, they're tied to a class. C++ doesn't have pointers-to-class, so there is no scenario in which you could invoke a static function virtually.
+
+//Inter-thread communication
+https://www.geeksforgeeks.org/ipc-using-message-queues/
